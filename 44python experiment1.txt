@@ -1,0 +1,135 @@
+1)
+>>> a=10
+>>> b=2
+>>> print(a+b)
+12
+>>> print(a-b)
+8
+>>> print(a*b)
+20
+>>> print(a/b)
+5.0
+>>> print(a%b)
+0
+>>> print(a//b)
+5
+>>> print(a**b)
+100
+ 
+2)
+>>> a=int(input("enter first number"))
+enter first number 10
+>>> b=int(input("enter second number"))
+enter second number20
+>>> print(a+b)
+30
+>>> print(a-b)
+-10
+>>> print(a*b)
+200
+>>> print(a/b)
+0.5
+>>> print(a%b)
+10
+>>> print(a//b)
+0
+>>> print(a**b)
+100000000000000000000
+>>> a=eval(input("enter first number"))
+enter first number 10.5
+>>> b=eval(input("enter second number"))
+enter second number 5
+>>> print(a+b)
+15.5
+>>> print(a-b)
+5.5
+>>> print(a*b)
+52.5
+>>> print(a/b)
+2.1
+>>> print(a%b)
+0.5
+>>> print(a//b)
+2.0
+>>> print(a**b)
+127628.15625
+
+3) 
+>>> a=10
+>>> b=20
+>>> print(a<b)
+True
+>>> print(a>b)
+False
+>>> print(a<=b)
+True
+>>> print(a>=b)
+False
+>>> a="mommy"
+>>> b="daddy"
+>>> print(a<b)
+False
+>>> print(a>b)
+True
+>>> print(a<=b)
+False
+>>> print(a>=b)
+True
+
+4)
+>>> a=int(input("enter first number"))
+enter first number 10
+>>> b=int(input("enter second number"))
+enter second number 20
+>>> temp=a
+>>> a=b
+>>> b=temp
+>>> print("after swapping of two numbers are:")
+after swapping of two numbers are:
+>>> print("------------")
+------------
+>>> print("first value is:",a)
+first value is: 20
+>>> print("second value is:",b)
+second value is: 10
+
+>>> a=10
+>>> b=10
+>>> a==b
+True
+>>> a=10
+>>> b=10
+>>> a!=b
+False
+
+5)
+>>> a=int(input("enter first side:"))
+enter first side:10
+>>> b=int(input("enter second side:"))
+enter second side:20
+>>> c=int(input("enter third side:"))
+enter third side:30
+>>> s=(a+b+c)/2
+>>> area=(s*(s-a)*(s-b)*(s-c))**0.5
+>>> print("The area of triangle is:",area)
+The area of triangle is: 0.0
+>>> print(area)
+0.0
+
+6)
+>>> length=12
+>>> breadth=5
+>>> area=length*breadth
+>>> perimeter=2*(length+breadth)
+>>> print(area)
+60
+>>> print(perimeter)
+34
+
+7)
+>>> diameter=float(input("enter the diameter of the circle:"))
+enter the diameter of the circle:20
+>>> radius=diameter/2
+>>> print("the radius of the circle is:",radius)
+the radius of the circle is: 10.0
+

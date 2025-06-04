@@ -1,0 +1,887 @@
+ 1)a=10
+
+ b=10
+
+ print(a is b)
+
+ print(a is not b)
+
+ print(id(a))
+
+ print(id(b))
+output:
+True
+
+False
+
+138825141004584
+
+138825141004584
+
+ 
+a=10
+>>> b=20
+>>> print(a is b)
+False
+>>> print(a is not b)
+True
+>>> print(a==b)
+False
+>>> print(id(a))
+8773527829856
+>>> print(id(b))
+8773527830176
+
+2)authorized_users=['admin','divya','sree']
+
+username=input("enter your name:")
+
+if username in authorized_users:
+   
+ print(f"welcome,{username}!you are authorized")
+
+else :
+  
+  print(f"access denied!{username}is not an authgorized user")
+
+output:
+enter your name:divya
+
+welcome,divya!you are authorized
+enter your name:madhu
+
+access denied!madhuis not an authgorized user
+
+
+
+3)a=float(input("enter first value:"))
+
+b=float(input("enter second value:"))
+
+c=float(input("enter third value:"))
+
+min_value=min(a,b,c)
+
+print(f"the minimum value is:{min_value}")
+
+output:
+enter first value:20
+
+enter second value:30
+
+enter third value:40
+
+the minimum value is:20.0
+
+
+4)a=float(input("enter first value:"))
+
+b=float(input("enter second value:"))
+
+c=float(input("enter third value:"))
+
+if a>b and a>c:
+  
+  print(f"{a} is maximum")
+
+elif a<b and b>c:
+
+        print(f"{b} is maximum")
+
+elif  a<c and b<c:
+  
+         print(f"{c}is maximum")
+
+output:
+enter first value:20
+
+enter second value:40
+
+enter third value:80
+
+80.0is maximum
+
+5)num=int(input("enter a year:"))
+
+if num%4==0:
+ 
+   print("the year is leap year")
+
+else:
+
+    print("the year is not leap year")
+
+output:
+enter a year:2004
+
+the year is leap year
+
+
+enter a year:2025
+
+the year is not leap year
+
+
+6)print("Try programiz.pro")
+
+num=int(input("enter any number:"))
+
+if num%2==0:
+
+    print("the given number is even")
+
+else:
+
+    print("the given number is odd")
+
+output:
+enter any number:2
+
+the given number is even
+
+
+enter any number:7
+
+the given number is odd
+
+
+7)num=int(input("enter any number:"))
+
+if num>=1 and num<=100:
+
+    print("the given number is within the range")
+
+else:
+
+        print("the given number is not within the range")
+
+output:
+enter any number:5
+
+the given number is within the range
+enter any number:0
+
+the given number is not within the range
+	
+8)num1=int(input("enter first number:"))
+
+num2=int(input("enter second number:"))
+
+if num1>num2:
+
+    print("the given number is biggest number")
+
+else:
+ 
+   print("the given number is smaller number")
+
+output:
+enter first number:77
+enter second number:66
+
+the given number is biggest number
+
+enter first number:17
+
+enter second number:27
+
+the given number is smaller number
+
+
+9)name=input("enter your choice:")
+
+if name=="strawberry":
+ 
+   print("it is children flavour")
+
+elif name=="chocolate":
+   print("it is too much tasty ")
+
+elif name=="venilla":
+
+    print("buy one get one free")
+
+else:
+
+    print("other flavours are not recommended")
+
+output:
+enter your choice:strawberry
+
+it is children flavour
+
+
+
+10)n=eval(input("enter a number"))
+
+if n==1:
+
+    print("one")
+
+elif  n==2:
+
+    print("two")
+
+elif n==3:
+
+    print("three")
+
+elif n==4:
+
+    print("four")
+
+else:
+
+    print("the no is not valid")
+
+output:
+enter a number:1
+one
+
+enter a number:6
+
+the no is not valid
+
+
+7)for x in range(1,11):
+
+    print(x)
+
+output:
+1
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+
+8)for x in range(21):
+    if x%2!=0:
+ 
+     print(x)
+
+output:
+1
+
+3
+
+5
+
+7
+
+9
+
+11
+
+13
+
+15
+
+17
+
+19
+
+9)for x in range(7):
+
+    if x!=3 and x!=5:
+ 
+       print(x)
+   
+
+output:
+0
+
+1
+
+2
+
+4
+
+6  
+
+10)list=eval(input("enter some list elements"))
+
+sum =0
+for x in list:
+   print(x)
+
+    sum=sum+x
+     print("the sum value:",sum)
+
+output:
+
+enter some list elements[1,2,3,4,5]
+
+1
+
+the sum value: 1
+
+2
+
+the sum value: 3
+
+3
+
+the sum value: 6
+
+4
+
+the sum value: 10
+
+5
+
+the sum value: 15
+
+11)n=int(input("enter any number"))
+
+for x in range(1,11):
+ 
+   print(n,'*',x,"=",n*x)
+
+output:
+enter any number6
+
+6 * 1 = 6
+
+6 * 2 = 12
+
+6 * 3 = 18
+
+6 * 4 = 24
+
+6 * 5 = 30
+
+6 * 6 = 36
+6 * 7 = 42
+
+6 * 8 = 48
+
+6 * 9 = 54
+
+6 * 10 = 60
+
+12)a=input("enter a string:")
+
+for i in range(len(a)):
+ 
+   print(i,"=",a[i])
+
+
+output:
+
+enter a string:divya
+
+0 = d
+
+1 = i
+
+2 = v
+
+3 = y
+
+4 = a
+
+    
+
+13)n=int(input("enter any number:"))
+
+for x in range (1,n+1):
+
+    if x%7==0 and  x%5==0:
+
+        print(x)
+ 
+
+output:
+enter any number:100
+
+35
+
+70    
+
+14)n=input("enter some numbers:")
+
+i=0
+
+j=0
+for x in n:
+
+    x=int(x)
+
+    if x%2==0:
+ 
+       i=i+1
+
+    else:
+
+            j=j+1
+
+            print("even numbers count is:",i)
+ 
+           print("odd numbers count is:",j)
+
+
+15)
+n1=int(input("enter first number:"))
+
+n2=int(input("enter second number:"))
+
+if n1<n2:
+
+    sum=n1+n2
+ 
+   print(sum)
+
+else:
+ 
+   sub=n1-n2
+
+   print(sub)
+        
+
+output:
+enter first number:10
+
+enter second number:20
+
+30
+
+enter first number:20
+
+enter second number:10
+
+10
+
+16)
+n1=int(input("enter first numbers:"))
+
+n2=int(input("enter second numbers:"))
+
+n3=int(input("enter third numberes:"))
+
+n4=int(input("enter fourth numbers:"))
+
+s=n1
+
+if n2<s:
+ 
+   s=n2
+
+    if n3<s:
+ 
+       s=n3
+
+        if n4<s:
+
+            s=n4
+
+print("the smaller number is:",s)
+
+output:
+enter first numbers:10
+
+enter second numbers:20
+
+enter third numberes:30
+
+enter fourth numbers:40
+
+the smaller number is: 10
+
+17)sum=0
+for x in range (100,1,-1):
+
+    if x%2!=0:
+
+        sum=sum+x
+ 
+   print("the sum is:",sum)
+
+output:
+the sum is: 99
+the sum is: 196
+the sum is: 291
+the sum is: 384
+the sum is: 475
+the sum is: 564
+the sum is: 651
+the sum is: 736
+the sum is: 819
+the sum is: 900
+the sum is: 979
+the sum is: 1056
+the sum is: 1131
+the sum is: 1204
+the sum is: 1275
+the sum is: 1344
+the sum is: 1411
+the sum is: 1476
+the sum is: 1539
+the sum is: 1600
+the sum is: 1659
+the sum is: 1716
+the sum is: 1771
+the sum is: 1824
+the sum is: 1875
+the sum is: 1924
+the sum is: 1971
+the sum is: 2016
+the sum is: 2059
+the sum is: 2100
+the sum is: 2139
+the sum is: 2176
+the sum is: 2211
+the sum is: 2244
+the sum is: 2275
+the sum is: 2304
+the sum is: 2331
+the sum is: 2356
+the sum is: 2379
+the sum is: 2400
+the sum is: 2419
+the sum is: 2436
+the sum is: 2451
+the sum is: 2464
+the sum is: 2475
+the sum is: 2484
+the sum is: 2491
+the sum is: 2496
+the sum is: 2499
+
+
+18)
+i=1
+
+while i<=10:
+
+    print(i)
+
+    i=i+1 
+
+output:
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+19)
+i=10
+
+while i<=1:
+
+    print(i)
+
+       i=i-1
+
+output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+20)
+n=int(input("enter a number:"))
+sum=0
+i=1
+while i<=n:
+          print(i)
+          sum=sum+i
+          i=i+1
+          print("the sum is:",sum)
+
+output:
+enter a number:10
+1
+the sum is: 1
+2
+the sum is: 3
+3
+the sum is: 6
+4
+the sum is: 10
+5
+the sum is: 15
+6
+the sum is: 21
+7
+the sum is: 28
+8
+the sum is: 36
+9
+the sum is: 45
+10
+the sum is: 55
+
+
+21)
+n=int(input("enter a number:"))
+dup=n
+sum=0
+while n>0:
+    rem=n%10
+    sum=(sum*10)+rem
+    n=n//10
+if dup==sum:
+        print("the given number is palindrome")
+else:
+        print("the given number is not palindrome")
+
+output:
+enter a number:121
+the given number is palindrome
+
+22)n=int(input("enter a number:"))
+dup=n
+sum=0
+while n>0:
+    rem=n%10
+    sum=sum+(rem**3)
+    n=n//10
+if dup==sum:
+        print("the given number is armstrong")
+else:
+        print("the given number is not armstrong")
+
+output:
+enter a number:153
+the given number is armstrong
+
+23)
+for x in range(1,10):
+    if x%2==0:
+        continue
+    if x%5==0:
+        break
+    print(x)
+    
+
+output:
+1
+3
+
+24)
+for x in range(1,10):
+    if x==5:
+        continue
+    if x==8:
+        break
+    print(x)
+    
+output:
+1
+2
+3
+4
+6
+7
+
+25)
+l=[10,20,30,40]
+print(l)
+print(id(l))
+l[0]=80
+print(l)
+print(id(l))
+
+output:
+[10, 20, 30, 40]
+682390260424
+[80, 20, 30, 40]
+682390260424
+
+25)
+ls=[]
+print(ls)
+print(type(ls))
+
+output:
+[]
+<class 'list'>
+
+26)
+ls=list('python')
+print(ls)
+print(type (ls))
+
+output:
+['p', 'y', 't', 'h', 'o', 'n']
+<class 'list'>
+
+27)
+ls=list(range(11))
+print(ls)
+print(type(ls))
+
+output:
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+<class 'list'>
+
+28)
+s=input("enter any string")
+print(s.split())
+
+output:
+enter any string python is easy
+['python', 'is', 'easy']
+
+29)
+a=10
+b=20.5
+c="python"
+d=30+40j
+e=True
+ls=[a,b,c,d,e]
+print(ls)
+print(type(ls))
+
+
+output:
+[10, 20.5, 'python', (30+40j), True]
+<class 'list'>
+
+30)
+ls=[10,20.5,"python",True,30+40j]
+print(ls)
+print(type(ls))
+a,b,c,d,e=[10,20.5,"python",True,30+40j]
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+
+output:
+[10, 20.5, 'python', True, (30+40j)]
+<class 'list'>
+10
+20.5
+python
+True
+(30+40j)
+
+40)
+ls=[10,20,True,20.5,"python",0,1,80+90j]
+print(ls.count(1))/print(ls.count(10))
+
+output:
+2
+1
+
+41)
+ls=[10,20,True,20.5,"python",0,1,80+90j,10]
+print(ls.index(10))
+
+output:
+0
+
+42)
+ls=[10,20,30,40]
+print(max(ls))
+
+output:
+40
+
+43)
+ls=[10,20,30,40]
+print(min(ls))
+
+output:
+10
+
+44)
+ls=[10,20,50,0.5,89,10]
+print(ls)
+ls.pop()
+print(ls)
+
+output:
+[10, 20, 50, 0.5, 89, 10]
+[10, 20, 50, 0.5, 89]
+
+45)
+ls=[10,20,30,40]
+print(ls)
+ls.pop(1)
+x=ls.pop(2)
+print(ls)
+
+output:
+[10, 20, 30, 40]
+[10, 30]
+
+46)
+ls=[10,20,30,40,50,80,20,40]
+ls.clear()
+print(ls)
+
+output:
+[]
+
+47)
+ls=[10,20,30,40,50,80,20,40]
+ls.append(70)
+ls.append(66)
+print(ls)
+
+output:
+[10, 20, 30, 40, 50, 80, 20, 40, 70, 66]
+
+
+48)
+s=[x*x for x in range(1,11)]
+print(s)
+m=[x for x in s if x%2==0]
+print(m)
+
+output:
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+[4, 16, 36, 64, 100]
+
+49)
+ls=[1,4,2,7,3,9]
+print(ls)
+ls.extend([10,20,30])
+print(ls)
+
+output:
+[1, 4, 2, 7, 3, 9]
+[1, 4, 2, 7, 3, 9, 10, 20, 30]
+
+
+
