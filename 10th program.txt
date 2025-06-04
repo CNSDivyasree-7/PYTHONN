@@ -1,0 +1,64 @@
+1)try:
+   x=10/0
+except Exception as e:
+    print("an error occurred:",str(e))
+
+output:
+an error occurred: division by zero
+
+2)try:
+    num=int(input("enter a number:"))
+    result=10/num
+    print("result:",result)
+except valueerror:
+    print("error:invalid input ! please enter a valid number")
+except zerodivisionerror:
+    print("error:division by zero!")
+
+
+output:
+enter a number:2
+result: 5.0
+
+3)try:
+    num=int(input("enter a number:"))
+    result=10/num
+except valueerror:
+    print("error:invalid!please enter a valid number:")
+except zerodivisionerror:
+    print("error:division by zero!")
+else:
+    print("result:",result)
+
+output:
+enter a number:2
+result: 5.0
+
+4)try:
+    file=open("my_file.txt","r")
+except IOError:
+    print("Error:UNABLE to read the file!:")
+finally:
+    file.close()
+
+
+OUTPUT:
+Traceback (most recent call last):
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python38-32/h.py", line 6, in <module>
+    file.close()
+NameError: name 'file' is not defined
+
+
+5)try:
+    x=int(input('enter a number upto 100:'))
+    if x>100:
+        raise valueError(x)
+except valueError:
+    print(x,"is out of allowed range")
+else:
+    print(x,"is within the allowed range")
+
+
+output:
+enter a number upto 100:10
+10 is within the allowed range
