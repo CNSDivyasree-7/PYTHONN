@@ -1,0 +1,33 @@
+1)import turtle
+t=turtle.Turtle()
+t.forward(100)
+turtle.mainloop()
+
+OUTPUT:
+
+
+
+2)import turtle
+t=turtle.Turtle()
+t.circle(50)
+turtle.mainloop()
+
+output:
+
+
+
+3)import turtle
+t=turtle.Turtle()
+turtle.bgcolor("red")
+turtle.mainloop()
+
+output:
+
+
+
+4)import turtle
+my_pen=turtle.turtle()
+for i in range(4):
+    my_pen.forward(50)
+    my_pen.right(90)
+turtle.done() 

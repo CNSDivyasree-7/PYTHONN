@@ -1,0 +1,111 @@
+1)a=10
+b=2
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+output:
+12
+8
+20
+5.0
+0
+5
+100
+
+2)a=int(input("enter first number"))
+b=int(input("enter second number"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+
+output:
+enter first number20
+enter second number5
+25
+15
+100
+4.0
+0
+4
+3200000
+
+3)a=10
+b=20
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
+
+
+output:
+True
+False
+True
+False
+
+4)a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+temp=a
+a=b
+b=temp
+print("after swapping of two numbers are:")
+print("----------")
+print("first value is:",a)
+print("second value is:",b)
+
+
+output:
+enter first number:10
+enter second number:20
+after swapping of two numbers are:
+----------
+first value is: 20
+second value is: 10
+
+
+5)a=int(input("enter first side:"))
+b=int(input("enter second side:"))
+c=int(input("enter third side:"))
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c))**0.5
+print("the area of triangle is:",area)
+
+
+output:
+enter first side:20
+enter second side:30
+enter third side:40
+the area of triangle is: 290.4737509655563
+
+
+6)length=12
+breadth=5
+area=length*breadth
+perimeter=2*(length+breadth)
+print("the area of rectangle is:",area)
+print("the perimeter of rectangle is:",perimeter)
+
+
+output:
+the area of rectangle is: 60
+the perimeter of rectangle is: 34
+
+
+7)d=float(input("enter diameter:"))
+radius=d/2
+print("the radius of the circle is:",radius)
+
+
+output:
+enter diameter:10
+the radius of the circle is: 5.0

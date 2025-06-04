@@ -1,0 +1,90 @@
+1)def fibonacci(Number):
+    if(Number==0):
+        return 0
+    elif Number==1:
+        return 1
+    else:
+        return fibonacci(Number-2)+fibonacci(Number-1)
+Number=int(input("please enter the fibonacci Number range="))
+sum=0
+for Num in range(Number):
+    print(fibonacci(Num),end='')
+    sum=sum+fibonacci(Num)
+    print("\n the sum of fibonacci series Nunmbers=%d"%sum)
+
+
+output:
+please enter the fibonacci Number range=8
+0
+ the sum of fibonacci series Nunmbers=0
+1
+ the sum of fibonacci series Nunmbers=1
+1
+ the sum of fibonacci series Nunmbers=2
+2
+ the sum of fibonacci series Nunmbers=4
+3
+ the sum of fibonacci series Nunmbers=7
+5
+ the sum of fibonacci series Nunmbers=12
+8
+ the sum of fibonacci series Nunmbers=20
+13
+ the sum of fibonacci series Nunmbers=33
+
+
+2)def factorial(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+n=int(input('enter any number:'))
+print('factorial value of',n,"is:",factorial(n))
+
+
+ouytput:
+enter any number:5
+factorial value of 5 is: 120
+
+
+3)def pal(s):
+    s=s.lower()
+    if len(s)<=1:
+       return True
+    elif s[0]!=s[-1]:
+       return False
+    else:
+       return pal(s[1:-1])
+myinput=input("enter a string:")
+if pal(myinput):
+    print(f" '{myinput}' is palindrome")
+else:
+    print(f" '{myinput}'is not a palindrome")
+
+
+OUTPUT:
+enter a string:MADAM
+ 'MADAM' is palindrome
+
+4)def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+x=input("enter the first integer:")
+y=input("enter the second integer:")
+if x.isdigit()and y.isdigit():
+   a=int(x)
+   b=int(y)
+   result=gcd(a,b)
+   print(f"the gcd of{a}and{b}is:",result)
+else:
+   print("please enter valid integers")
+
+
+output:
+enter the first integer:36
+enter the second integer:18
+the gcd of36and18is: 18

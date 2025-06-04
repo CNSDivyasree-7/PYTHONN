@@ -1,0 +1,125 @@
+1)mylist=[]
+n=int(input("enter any number:"))
+for x in range(n):
+    num=int(input("enter a number:"))
+    mylist.append(num)
+    print("my updated list is:",mylist)
+
+output:
+enter any number:5
+enter a number:10
+my updated list is: [10]
+enter a number:20
+my updated list is: [10, 20]
+enter a number:30
+my updated list is: [10, 20, 30]
+enter a number:40
+my updated list is: [10, 20, 30, 40]
+enter a number:50
+my updated list is: [10, 20, 30, 40, 50]
+
+
+2)l=[10,20,30,"sravani",(10+20j),True]
+print(l[3])
+print(l[-2])
+print(l[1:4])
+print(l)
+l.remove(30)
+print(l)
+
+output:
+sravani
+(10+20j)
+[20, 30, 'sravani']
+[10, 20, 30, 'sravani', (10+20j), True]
+[10, 20, 'sravani', (10+20j), True]
+
+
+3)l=[10,20,30,40,60,True,163]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+
+
+OUTPUT:
+7
+[10, 20, 30, 40, 60, True, 163]
+163
+True
+
+
+4)mylist=[8,2,3,0,7]
+sum=0
+for i in mylist:
+    sum=sum+i
+    print("the sum is:",sum)
+
+
+output:
+the sum is: 8
+the sum is: 10
+the sum is: 13
+the sum is: 13
+the sum is: 20
+
+
+5)s=input("enter the string:")
+print(s.split())
+
+
+output:
+enter the string:divya is a good girl
+['divya', 'is', 'a', 'good', 'girl']
+
+
+6)n=int(input("enter the value of n:"))
+mylist=[]
+for i in range(n):
+  num=int(input("enter a number:"))
+  mylist.append(num)
+print("every numbers are")
+print("[",end=" ")
+for num in mylist:
+  if num%2==0:
+     print(num,end=",")
+  print("]")
+
+
+OUTPUT:
+enter the value of n:5
+enter a number:10
+enter a number:20
+enter a number:305
+enter a number:16
+enter a number:163
+every numbers are
+[10,]
+20,]
+]
+16,]
+]
+
+
+7)list=[10,20,30,"jeevan",True,0,(16+3j),False,1,True]
+print(list)
+x=list.copy()
+print(x)
+list.pop(3)
+print(list)
+del list[2]
+print(list)
+list.reverse()
+print(list)
+list.clear()
+print(list)
+
+
+OUTPUT:
+[10, 20, 30, 'jeevan', True, 0, (16+3j), False, 1, True]
+[10, 20, 30, 'jeevan', True, 0, (16+3j), False, 1, True]
+[10, 20, 30, True, 0, (16+3j), False, 1, True]
+[10, 20, True, 0, (16+3j), False, 1, True]
+[True, 1, False, (16+3j), 0, True, 20, 10]
+[]
+
